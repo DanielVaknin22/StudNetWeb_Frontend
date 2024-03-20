@@ -50,7 +50,7 @@ export default function PopupMessage({ onClose, onDelete, onEdit }) {
         TransitionComponent={Fade}
       >
         <MenuItem onClick={handleEdit}>Edit</MenuItem>
-        <MenuItem onClick={handleDelete}>Delete</MenuItem>
+        <MenuItem id="deletePost"onClick={handleDelete}>Delete</MenuItem>
       </Menu>
     </PopDiv>
   );

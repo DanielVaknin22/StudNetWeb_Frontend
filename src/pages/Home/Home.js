@@ -244,9 +244,9 @@ export default function Home() {
                   <>
                   <div>
   {post.likes.includes(JSON.parse(auth)._id) ? (
-    <EditDeleteButton onClick={() => handleLikePost(post._id)}>Unlike</EditDeleteButton>
+    <EditDeleteButton id="unlikeButton" onClick={() => handleLikePost(post._id)}>Unlike</EditDeleteButton>
   ) : (
-    <EditDeleteButton onClick={() => handleLikePost(post._id)}>Like</EditDeleteButton>
+    <EditDeleteButton id="likeButton"onClick={() => handleLikePost(post._id)}>Like</EditDeleteButton>
   )}
   <EditDeleteButton onClick={() => setCommentContent(post._id)}>Save</EditDeleteButton>
   <EditDeleteButton onClick={() => setShareContent(post._id)}>Share</EditDeleteButton>
