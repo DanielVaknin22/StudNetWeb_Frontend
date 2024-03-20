@@ -30,6 +30,7 @@ import PopupMessage from './PopMessage';
 // import { myUser } from '../Login/Login';
 
 export default function Home() {
+  const [showInputText, setShowInputText] = useState(true);
   const [auth, setAuth] = useState(null);
   const [postData, setPostData] = useState([]);
   const [newPostContent, setNewPostContent] = useState('');
@@ -130,7 +131,7 @@ export default function Home() {
     }
   };
 
-  const [showInputText, setShowInputText] = useState(true);
+  
 
   const handleCancelClick = () => {
     setShowInputText(false);
@@ -232,7 +233,7 @@ export default function Home() {
                         multiline
                         />
                   {post.userID._id === JSON.parse(auth)._id && (
-                    <><EditDeleteButton onClick={() => handleUpdatePost(post._id, updatedPostContent)}>
+                    <><EditDeleteButton id="postButton" onClick={() => handleUpdatePost(post._id, updatedPostContent)}>
                       Post
                     </EditDeleteButton><CancelButton onClick={() => handleCancelClick}>Cancel</CancelButton></>
                   )}
