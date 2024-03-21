@@ -113,7 +113,7 @@ export default function SignUpView(props) {
       <LoginContainer>
         <InputLbl>Email address</InputLbl>
         <TextInputContainer>
-        <TextInput type="email" ref={email} placeholder="Email" />
+        <TextInput id='email' type="email" ref={email} placeholder="Email" />
         </TextInputContainer>
         <TextMesasge>
           {message}
@@ -121,34 +121,34 @@ export default function SignUpView(props) {
         </TextMesasge>
         <InputLbl>Username</InputLbl>
         <TextInputContainer>
-        <TextInput type="text" ref={userName} placeholder="Username" />
+        <TextInput id='userName' type="text" ref={userName} placeholder="Username" />
         </TextInputContainer>
         <TextMesasge>
           {messageUser}
         </TextMesasge>
         <InputLbl>First name</InputLbl>
         <TextInputContainer>
-        <TextInput type="text" ref={firstName} placeholder="First name" />
+        <TextInput id='firstName' type="text" ref={firstName} placeholder="First name" />
         </TextInputContainer>
         <TextMesasge>
           {messageFirst}
         </TextMesasge>
         <InputLbl>Last name</InputLbl>
         <TextInputContainer>
-        <TextInput type="text" ref={lastName} placeholder="Last name" />
+        <TextInput id='lastName' type="text" ref={lastName} placeholder="Last name" />
         </TextInputContainer>
         <TextMesasge>
           {messageLast}
         </TextMesasge>
         <InputLbl>Password</InputLbl>
         <TextInputContainer>
-          <TextInput type={show ? 'text' : 'password'} ref={password} placeholder="Password" />
+          <TextInput id='password' type={show ? 'text' : 'password'} ref={password} placeholder="Password" />
           <EyeLab onClick={handleShow}>
             <img src={show ? eyeClosed : eyeOpen} alt={show ? 'Hide' : 'Show'} />
           </EyeLab>
         </TextInputContainer>
         <TextMesasge>{messagePass}<br/>{messagePass1}<br/>{messagePass2}</TextMesasge>
-        <SubmitBtn onClick={() => submitHandler()}>Sign up</SubmitBtn>
+        <SubmitBtn id='signupComplete' onClick={() => submitHandler()}>Sign up</SubmitBtn>
         <InputLbl>&emsp;&emsp;Already have an account?&nbsp;&nbsp;<NavLink to="/login">Sign in</NavLink></InputLbl>
       </LoginContainer>
     </VerticalContainer>

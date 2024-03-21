@@ -65,7 +65,7 @@ function Navbar() {
           ) : (
             <>
               <NavbarLinkExtended to="/"><SubmitBtn> Sign in</SubmitBtn></NavbarLinkExtended>
-              <NavbarLinkExtended to="/signup"><SubmitBtn> Sign up</SubmitBtn></NavbarLinkExtended>
+              <NavbarLinkExtended id="signupButton" to="/signup"><SubmitBtn> Sign up</SubmitBtn></NavbarLinkExtended>
             </>
           )}
         </RightContainer>
