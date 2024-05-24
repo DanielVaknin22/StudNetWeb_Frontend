@@ -86,6 +86,7 @@ export default function Search() {
           <SearchHolder>
             <CreateSearchContainer>
               <SearchInput
+                id='searchText'
                 type="text"
                 value={searchText}
                 onChange={handleInputChange}
