@@ -281,7 +281,8 @@ const getSchoolYearLabel = (value) => {
 const toggleEdit= () => {
   setIsEditing(!isEditing);
   if (isEditing) {
-    if ( changeAccount() === true) saveProfile();
+    // if ( changeAccount() === true) 
+      saveProfile();
   }
 };
 
